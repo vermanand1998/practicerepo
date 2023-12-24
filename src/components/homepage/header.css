@@ -1,0 +1,52 @@
+/* header.css */
+.app-header {
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+  }
+  
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+  }
+  
+  .nav-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-right {
+    display: flex;
+  }
+  
+  .nav-right a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-right a:hover,
+  .nav-right a.active {
+    color: #ffcc00;
+  }
+  
+  

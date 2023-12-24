@@ -1,0 +1,71 @@
+/* SeatMap.css */
+.seat-map {
+    text-align: center;
+}
+
+.seat-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.seat {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 5px;
+    user-select: none;
+}
+
+.seat.available:hover {
+    background-color: #8bf493;
+    cursor: pointer;
+}
+
+.seat.booked {
+    background-color: #d3d3d3;
+    cursor: not-allowed;
+}
+
+.cross-icon {
+    color: red;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Added styles for proper alignment */
+.row-label {
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.column-labels {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Add some spacing between rows and column labels */
+}
+
+.column-label {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #f0f0f0; /* Light grey for column labels */
+}
+
+.empty-label {
+    width: 30px;
+}

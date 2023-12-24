@@ -1,0 +1,105 @@
+/* ReactState.css */
+
+.react-state-container {
+    /* max-width: 800px; */
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .data-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .product-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    width: calc(50% - 20px); /* Adjusted width for two cards in a row */
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+  
+    @media screen and (min-width: 600px) {
+      width: calc(33.33% - 20px); /* Adjusted width for three cards in a row */
+    }
+  
+    @media screen and (min-width: 768px) {
+      width: calc(25% - 20px); /* Adjusted width for four cards in a row */
+    }
+  
+    @media screen and (min-width: 1024px) {
+      width: calc(16.666% - 20px); /* Adjusted width for six cards in a row */
+    }
+  }
+  
+  .product-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .product-details {
+    padding: 15px;
+  }
+  
+  .product-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .product-category {
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .product-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e44d26; /* Orange color */
+    margin-bottom: 10px;
+  }
+  
+  .add-to-fav {
+    background-color: #4caf50; /* Green color */
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+    width: 100%;
+  
+  }
+  
+  /* Loading Animation */
+  .loading-spinner {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 600px) {
+    .product-card {
+      width: calc(50% - 20px);
+    }
+  }
+  
