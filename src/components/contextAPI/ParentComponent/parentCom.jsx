@@ -48,9 +48,10 @@ function ParentCom() {
   return (
     <>
       {/* //STEP-2: Add provider for your context */}
-      <FirstName.Provider value={"Anoop"}>
+      <FirstName.Provider value={"Ankita"}>
         <LirstName.Provider value={"Verma"}>
           <ChildC />
+          
         </LirstName.Provider>
       </FirstName.Provider>
     </>

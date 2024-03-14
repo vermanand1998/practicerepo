@@ -1,0 +1,17 @@
+.mainContainer {
+    width: 100%;
+    flex-direction: row !important;
+  }
+  .categoryImage {
+    width: 130px;
+  }
+  
+  @media (max-width: 768px) {
+    .mainContainer {
+      width: 100%;
+    }
+    .categoryImage {
+      width: 80px;
+    }
+  }
+  

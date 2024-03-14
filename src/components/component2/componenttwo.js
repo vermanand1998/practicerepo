@@ -1,16 +1,16 @@
 import { useContext } from "react";
-// import UserContext,{DisplayProduct} from "../../context/UserContext";
 import UserContext from "../../context/UserContext";
+// import UserContext from "../../context/UserContext";
 import ReactState from "../reactstate/reactstate";
 
 
 const CompTwo = () => {
-  const {user}=useContext(UserContext);
+  // const {user}=useContext(UserContext);
   const {productsData}=useContext(UserContext);
   const data=productsData.prod;
     return (
       <>
-       <h1>{user.Anand}</h1>
+       {/* <h1>{user.Anand}</h1> */}
        {false ? (
         <p className="loading-spinner">Loading...</p>
       ) : (
@@ -50,3 +50,4 @@ const CompTwo = () => {
   
   export default CompTwo;
   
+

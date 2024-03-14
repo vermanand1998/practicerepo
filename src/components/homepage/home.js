@@ -14,7 +14,7 @@ const Header = () => {
             </NavLink>
           </div>
           <nav className="nav-right">
-            <NavLink to={"/reactForm?gender=men"} activeClassName="active">
+            <NavLink to={"/reactFormAnand?gender=men"} activeClassName="active">
               ReactForm
             </NavLink>
             <NavLink to={"/seat?gender=women"} activeClassName="active">

@@ -3,6 +3,8 @@
 import React, { useState, useEffect,useContext } from "react";
 import { Link } from "react-router-dom";
 import "./ReactState.css";
+import ButtonN from '@mui/material/Button';
+import Stack from '@mui/material/Stack';
 // import UserContext,{DisplayProduct} from "../../context/UserContext";
 import UserContext from "../../context/UserContext";
 
@@ -28,14 +30,12 @@ const ReactState = () => {
         {
           method: "GET",
           headers: {
-            projectId: "ecbv068658kc",
-          },
+            projectId: "ecbv068658kc"
+          }
         }
       );
       const json = await response.json();
       setData(json.data);
-      
-      setUser({ 'Anand': "ANAND VERMA" });
       setproductsData({ 'prod': json.data });
       setLoading(false);
     } catch (error) {
@@ -79,11 +79,21 @@ const ReactState = () => {
 
   return (
     <div className="react-state-container">
-      <div style={{ textAlign: 'center', margin: '20px' }}>
+      <div style={{ textAlign: 'center', margin: '20px' , backgroundColor:'black'}}>
         <button onClick={() => shortProducts('Men')} style={menStyle}>MEN</button>
         <button onClick={() => shortProducts('Women')} style={womenStyle}>WOMEN</button>
         <button onClick={() => shortProducts('')} style={allStyle}>ALL</button>
-        <button onClick={() => shortProducts('Shirt')} style={allStyle}>SHIRT</button>
+      {/* <ButtonN variant="text" style={{ color: 'red', fontWeight: 'bold' }}>
+        Text
+      </ButtonN>
+      <ButtonN variant="contained" style={{ backgroundColor: 'green', color: 'white' }}>
+        Contained
+      </ButtonN>
+      <ButtonN variant="outlined" className="custom-outlined-button">
+        Outlined
+      </ButtonN> */}
+        
+
       </div>
       {loading ? (
         <p className="loading-spinner">Loading...</p>
@@ -126,3 +136,6 @@ const ReactState = () => {
 };
 
 export default ReactState;
+
+
+// CSS VIDEO LINK: https://www.youtube.com/watch?v=ESnrn1kAD4E
